@@ -1,0 +1,12 @@
+#Unique Digits and number of occurences
+I = 23456654378788
+S = str(I)
+Z = list(set(S))
+#j = 4
+print(Z)
+for j in range(len(S)):
+    cnt = 0
+    for i in range(len(S)):
+        if S[i] == Z[j]:
+           cnt+=1
+    print(Z[j],cnt)
